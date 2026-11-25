@@ -35,19 +35,43 @@
             </p>
         </section>
 
-        <!-- Upload Section -->
-        <section class="upload-section">
+      
+<!-- Upload Section -->
+<section class="upload-section">
 
-            <h2>Upload Your Photos</h2>
+    <h2>Upload Your Photos</h2>
 
-            <div class="upload-box">
-                <p>Drag and drop your photos here</p>
-                <p>or</p>
+    <div class="upload-box" id="uploadBox">
 
-                <button type="button">Browse Photos</button>
-            </div>
+        <p>Drag and drop your photos here</p>
+        <p>or</p>
 
-        </section>
+        <input
+            type="file"
+            id="fileInput"
+            accept="image/*"
+            multiple
+            hidden
+        >
+
+        <button type="button" id="browseBtn">
+            Browse Photos
+        </button>
+
+    </div>
+
+</section>
+
+<!-- Preview Section -->
+<section class="gallery-section">
+
+    <h2>Selected Photos</h2>
+
+    <div class="gallery-container" id="previewContainer">
+    </div>
+
+</section>
+
 
         <!-- Gallery Section -->
         <section id="gallery" class="gallery-section">
