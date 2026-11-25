@@ -189,7 +189,7 @@
             </section>
 
 
-            <!-- PHOTO GALLERY -->
+          <!-- PHOTO GALLERY -->
             <section class="content-section gallery-section" id="gallery">
 
                 <div class="section-heading gallery-heading">
@@ -197,15 +197,23 @@
                     <div>
                         <span class="section-tag">YOUR COLLECTION</span>
                         <h2>Selected Photos</h2>
-                        <p>Your selected photo previews will appear here.</p>
+                        <p>Apply PixelVeil and drag the slider on any photo to inspect Before vs. After.</p>
                     </div>
 
-                    <span class="gallery-label">PHOTO GALLERY</span>
+                    <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap;">
+                        <label class="ai-vision-toggle" title="Visualize hidden pixel scramble">
+                            <input type="checkbox" id="aiVisionToggle">
+                            <span>👁️ Simulate AI Vision</span>
+                        </label>
+                        <button type="button" id="veilAllBtn" class="browse-button" style="display: none;">
+                            🛡️ Veil Selected Photos
+                        </button>
+                    </div>
 
                 </div>
 
                 <div class="gallery-container" id="previewContainer">
-
+                    <!-- Uploaded photos & interactive Before/After sliders yahan aayenge -->
                 </div>
 
             </section>
