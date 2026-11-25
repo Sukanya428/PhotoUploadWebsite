@@ -1,11 +1,68 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>PhotoShare | Share Your Moments</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <!-- Navigation Bar -->
+    <header>
+        <h2>PhotoShare</h2>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#gallery">Gallery</a>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+
+        <section class="hero">
+            <h1>Share Your Beautiful Moments</h1>
+
+            <p>
+                Upload your photos and share your memories
+                with the world.
+            </p>
+        </section>
+
+        <!-- Upload Section -->
+        <section class="upload-section">
+
+            <h2>Upload Your Photos</h2>
+
+            <div class="upload-box">
+                <p>Drag and drop your photos here</p>
+                <p>or</p>
+
+                <button type="button">Browse Photos</button>
+            </div>
+
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery-section">
+
+            <h2>Recent Photos</h2>
+
+            <div class="gallery-container">
+                <!-- Uploaded photos will appear here -->
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
