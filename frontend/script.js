@@ -40,3 +40,19 @@ fileInput.addEventListener("change", function () {
     });
 
 });
+
+const modeButtons = document.querySelectorAll(".mode-btn");
+
+modeButtons.forEach(function(button) {
+
+    button.addEventListener("click", function() {
+
+        modeButtons.forEach(function(btn) {
+            btn.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+    });
+
+});

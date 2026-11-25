@@ -13,78 +13,212 @@
 
 <body>
 
-    <!-- Navigation Bar -->
-    <header>
-        <h2>PhotoShare</h2>
+    <div class="app-container">
 
-        <nav>
-            <a href="#">Home</a>
-            <a href="#gallery">Gallery</a>
-        </nav>
-    </header>
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
 
-    <!-- Main Section -->
-    <main>
-
-        <section class="hero">
-            <h1>Share Your Beautiful Moments</h1>
-
-            <p>
-                Upload your photos and share your memories
-                with the world.
-            </p>
-        </section>
-
-      
-<!-- Upload Section -->
-<section class="upload-section">
-
-    <h2>Upload Your Photos</h2>
-
-    <div class="upload-box" id="uploadBox">
-
-        <p>Drag and drop your photos here</p>
-        <p>or</p>
-
-        <input
-            type="file"
-            id="fileInput"
-            accept="image/*"
-            multiple
-            hidden
-        >
-
-        <button type="button" id="browseBtn">
-            Browse Photos
-        </button>
-
-    </div>
-
-</section>
-
-<!-- Preview Section -->
-<section class="gallery-section">
-
-    <h2>Selected Photos</h2>
-
-    <div class="gallery-container" id="previewContainer">
-    </div>
-
-</section>
-
-
-        <!-- Gallery Section -->
-        <section id="gallery" class="gallery-section">
-
-            <h2>Recent Photos</h2>
-
-            <div class="gallery-container">
-                <!-- Uploaded photos will appear here -->
+            <div class="brand">
+                <div class="brand-icon">✦</div>
+                <h2>PhotoShare<span>.</span></h2>
             </div>
 
-        </section>
+            <div class="sidebar-label">MENU</div>
 
-    </main>
+            <nav class="sidebar-nav">
+
+                <a href="#" class="nav-item active">
+                    <span>⌂</span>
+                    Home
+                </a>
+
+                <a href="#upload" class="nav-item">
+                    <span>＋</span>
+                    Upload Photos
+                </a>
+
+                <a href="#gallery" class="nav-item">
+                    <span>▦</span>
+                    My Gallery
+                </a>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="sidebar-note">
+                    <span class="note-icon">✧</span>
+                    <h3>Capture moments.</h3>
+                    <p>Keep your beautiful memories together.</p>
+                </div>
+
+                <p class="sidebar-footer">© 2026 PhotoShare</p>
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- TOP BAR -->
+            <header class="topbar">
+
+                <div>
+                    <p class="breadcrumb">Workspace / Home</p>
+                    <h3>Creative Space</h3>
+                </div>
+
+                <div class="profile">
+                    <div class="profile-avatar">P</div>
+                    <div class="profile-info">
+                        <strong>Photo Creator</strong>
+                        <span>Personal Workspace</span>
+                    </div>
+                </div>
+
+            </header>
+
+
+            <!-- HERO SECTION -->
+            <section class="hero">
+
+                <div class="hero-content">
+                    <span class="hero-tag">✦ YOUR CREATIVE SPACE</span>
+
+                    <h1>
+                        Every picture tells a
+                        <span>beautiful story.</span>
+                    </h1>
+
+                    <p>
+                        Upload, explore and collect your favourite
+                        moments in one beautiful place.
+                    </p>
+
+                    <a href="#upload" class="hero-button">
+                        Start Uploading <span>→</span>
+                    </a>
+                </div>
+
+                <div class="hero-decoration">
+                    <div class="decoration-card card-one">✿</div>
+                    <div class="decoration-card card-two">✦</div>
+                    <div class="decoration-circle"></div>
+                </div>
+
+            </section>
+
+
+            <!-- UPLOAD SECTION -->
+            <section class="content-section" id="upload">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-tag">ADD NEW MEMORIES</span>
+                        <h2>Upload your photos</h2>
+                        <p>Bring your favourite moments into your gallery.</p>
+                    </div>
+                </div>
+
+                <div class="upload-box" id="uploadBox">
+
+                    <div class="upload-icon">↑</div>
+
+                    <h3>Drop your photos here</h3>
+
+                    <p>
+                        Drag and drop your images or browse
+                        your device to select photos.
+                    </p>
+
+                    <input
+                        type="file"
+                        id="fileInput"
+                        accept="image/*"
+                        multiple
+                        hidden
+                    >
+
+                    <button
+                        type="button"
+                        id="browseBtn"
+                        class="browse-button"
+                    >
+                        Browse Photos <span>→</span>
+                    </button>
+
+                    <span class="upload-hint">
+                        IMAGE FILES ONLY
+                    </span>
+
+                </div>
+
+            </section>
+
+
+            <!-- PROTECTION MODE -->
+            <section class="content-section protection-section">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-tag">PERSONAL PREFERENCE</span>
+                        <h2>Protection Mode</h2>
+                        <p>Choose your preferred protection level.</p>
+                    </div>
+                </div>
+
+                <div class="mode-toggle">
+
+                    <button type="button" class="mode-btn">
+                        <span>◌</span>
+                        Subtle
+                    </button>
+
+                    <button type="button" class="mode-btn active">
+                        <span>◈</span>
+                        Balanced
+                    </button>
+
+                    <button type="button" class="mode-btn">
+                        <span>⬡</span>
+                        Max Shield
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- PHOTO GALLERY -->
+            <section class="content-section gallery-section" id="gallery">
+
+                <div class="section-heading gallery-heading">
+
+                    <div>
+                        <span class="section-tag">YOUR COLLECTION</span>
+                        <h2>Selected Photos</h2>
+                        <p>Your selected photo previews will appear here.</p>
+                    </div>
+
+                    <span class="gallery-label">PHOTO GALLERY</span>
+
+                </div>
+
+                <div class="gallery-container" id="previewContainer">
+
+                </div>
+
+            </section>
+
+
+            <!-- FOOTER -->
+            <footer class="main-footer">
+                Made with <span>♥</span> for your beautiful memories.
+            </footer>
+
+        </main>
+
+    </div>
 
     <script src="script.js"></script>
 
